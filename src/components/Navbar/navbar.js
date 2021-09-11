@@ -69,19 +69,18 @@ const NavigationBar = () => {
             </div>
           ))}
         </div>
-        <div
-          className="navbarButton"
-          style={{
-            textAlign: "center",
-            fontSize: "1rem",
-            width: "10rem",
-            backgroundColor: "white",
-            color: "black",
-            border: "0.125rem solid black",
-          }}
-        >
-          JOIN NOW
-        </div>
+        <a href="https://linktr.ee/winc_ucr" target="_blank" style={{textDecoration: 'none'}}>
+          <div
+            className="actionButton"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              border: "0.125rem solid black",
+            }}
+          >
+            JOIN NOW
+          </div>
+        </a>
       </div>
     </div>
   );
