@@ -2,13 +2,33 @@
   margin-right: 1.5rem;
 }
 
-.navbarLink > * {
+.navbarLink:last-child {
+  margin-right: 0;
+}
+
+.mobileNavLink {
+  margin-bottom: 1.5rem;
+}
+
+.mobileNavLink:last-child {
+  margin-bottom: 0;
+}
+
+.navbarLink > *, .mobileNavLink > * {
   color: white;
   text-decoration: none;
 }
 
-.navbarLink:last-child {
-  margin-right: 0;
+.mobileLinks {
+  border-bottom: 2px solid #A0A0A0;
+  position: fixed;
+  z-index: 2;
+  top: 5.25rem;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FA6C5E;
 }
 
 .actionButton {
@@ -18,4 +38,35 @@
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   width: 10rem;
+}
+
+@media (min-width: 901px) {
+  .menu {
+    display: none;
+  }
+
+  .mobileLinks {
+    height: 0;
+    display: none;
+    position: static;
+  }
+
+  .mobileNavLink {
+    display: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbarAction {
+    display: none;
+  }
+
+  .navbarLinks {
+    display: none;
+  }
+
+  .navbarLink {
+    display: none;
+  }
 }

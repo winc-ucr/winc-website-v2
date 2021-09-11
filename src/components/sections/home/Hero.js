@@ -1,10 +1,8 @@
+import { Link } from "gatsby";
 import React from "react";
 import Typist from "react-typist";
-import { Link, navigate, graphql, useStaticQuery } from "gatsby";
-
-import Layout from "../../layout";
+import Balsamiq from "../../../images/balsamiq.png";
 import "./home.css";
-import Balsamiq from '../../../images/balsamiq.png'
 
 const Hero = () => {
   return (
@@ -14,17 +12,13 @@ const Hero = () => {
           backgroundColor: "#FA6C5E",
         }}
       >
-        <div
-          style={{
-            minHeight: "calc(100vh - 5.25rem)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
+        <div className="hero">
+          <div
+            className="heroMobile"
+            style={{ height: "20rem", fontSize: "20rem" }}
+          >
+            👩‍💻
+          </div>
           <div>
             <h1
               style={{
@@ -42,15 +36,28 @@ const Hero = () => {
               <Typist.Backspace count={19} delay={100} />
               <span>data scientists;</span>
               <Typist.Backspace count={16} delay={100} />
-              <span>Women in computing;</span>
+              <span>Women in Computing;</span>
             </Typist>
-            <div 
+            <div
               style={{
-                display: 'flex'
+                color: "#F0F0F0",
+                marginBottom: "2.5rem",
               }}
             >
-            <Link to={"/about"} style={{marginRight: '1rem'}}>
-              <div
+              Description goes here
+              {/* WINC is dedicated to empowering and supporting a network of leading women in tech at the University of California, Riverside. */}
+            </div>
+            <div
+              className="heroAction"
+              style={{
+                display: "flex",
+              }}
+            >
+              <Link
+                to={"/about"}
+                style={{ marginRight: "1rem", textDecoration: "none" }}
+              >
+                <div
                   className="actionButton"
                   style={{
                     backgroundColor: "black",
@@ -59,22 +66,31 @@ const Hero = () => {
                 >
                   ABOUT
                 </div>
-            </Link>
-            <a href="https://linktr.ee/winc_ucr" target="_blank" style={{textDecoration: 'none'}}>
-              <div
-                className="actionButton"
-                style={{
-                  backgroundColor: "white",
-                  color: "black",
-                  border: "0.125rem solid black",
-                }}
+              </Link>
+              <a
+                href="https://linktr.ee/winc_ucr"
+                target="_blank"
+                style={{ textDecoration: "none" }}
               >
-                JOIN NOW
-              </div>
-            </a>
+                <div
+                  className="actionButton"
+                  style={{
+                    backgroundColor: "white",
+                    color: "black",
+                    border: "0.125rem solid black",
+                  }}
+                >
+                  JOIN NOW
+                </div>
+              </a>
             </div>
           </div>
-          <div style={{ height: "auto", fontSize: "20rem" }}>👩‍💻</div>
+          <div
+            className="heroDesktop"
+            style={{ height: "20rem", fontSize: "20rem" }}
+          >
+            👩‍💻
+          </div>
         </div>
       </div>
       <div
@@ -88,11 +104,7 @@ const Hero = () => {
         }}
       >
         <a href="https://balsamiq.com/" target="_blank">
-          <img
-            src={Balsamiq}
-            alt="balsamiq logo"
-            className="logo-image"
-          />
+          <img src={Balsamiq} alt="balsamiq logo" className="logo-image" />
         </a>
       </div>
     </>
