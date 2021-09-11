@@ -68,7 +68,6 @@ const Join = () => {
       </div>
       <div
         style={{
-          maxWidth: "82rem",
           padding: `0 2.5rem 2.5rem`,
         }}
       >
