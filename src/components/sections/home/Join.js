@@ -4,6 +4,7 @@ import Typist from "react-typist";
 
 import { BsPeopleFill } from "react-icons/bs";
 import { VscBroadcast, VscOrganization, VscSmiley } from "react-icons/vsc";
+import { BsMicFill } from "react-icons/bs";
 import Balsamiq from "../../../images/balsamiq.png";
 import "./home.css";
 
@@ -123,26 +124,29 @@ const Join = () => {
                     fontFamily: "'Manrope', sans-serif",
                     fontSize: "1.125rem",
                     textAlign: "center",
-                    margin: 0,
                     letterSpacing: "0.05rem",
+                    height: "2rem",
                   }}
                 >
                   MENTORSHIP
                 </h1>
+                <p style={{ textAlign: "center", height: "4.5rem" }}>
+                  learn from your peers about academia, industry, research,
+                  internships and much more.
+                </p>
                 <a
                   href="https://linktr.ee/winc_ucr"
                   target="_blank"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", cursor: "not-allowed" }}
                 >
                   <div
                     className="actionButton"
                     style={{
-                      backgroundColor: "white",
+                      backgroundColor: "#A0A0A0",
                       color: "black",
-                      border: "0.125rem solid black",
                     }}
                   >
-                    MORE INFO
+                    COMING SOON
                   </div>
                 </a>
               </div>
@@ -160,12 +164,16 @@ const Join = () => {
                     fontFamily: "'Manrope', sans-serif",
                     fontSize: "1.125rem",
                     textAlign: "center",
-                    margin: 0,
                     letterSpacing: "0.05rem",
+                    height: "2rem",
                   }}
                 >
-                  PROF DEV WORKSHOPS
+                  PROF. & TECH DEV WORKSHOPS
                 </h1>
+                <p style={{ textAlign: "center", height: "4.5rem" }}>
+                  Tried and true methods and insights from our network of
+                  members to break into tech.
+                </p>
                 <a
                   href="https://www.youtube.com/channel/UCpg9Xu-WaFM3KRN35f6hPNA"
                   target="_blank"
@@ -198,12 +206,16 @@ const Join = () => {
                     fontFamily: "'Manrope', sans-serif",
                     fontSize: "1.125rem",
                     textAlign: "center",
-                    margin: 0,
                     letterSpacing: "0.05rem",
+                    height: "2rem",
                   }}
                 >
                   COMMUNITY
                 </h1>
+                <p style={{ textAlign: "center", height: "4.5rem" }}>
+                  Interact with each other in a more casual setting with our
+                  inclusive bonding events.
+                </p>
                 <a
                   href="https://discord.gg/RH53n2dCFn"
                   target="_blank"
@@ -218,6 +230,48 @@ const Join = () => {
                     }}
                   >
                     DISCORD
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              className="actionBox"
+              style={{
+                backgroundColor: "#f9c74f",
+                color: "black",
+              }}
+            >
+              <div className="actionBoxContent">
+                <BsMicFill size="1.5em" />
+                <h1
+                  style={{
+                    fontFamily: "'Manrope', sans-serif",
+                    fontSize: "1.125rem",
+                    textAlign: "center",
+                    letterSpacing: "0.05rem",
+                    height: "2rem",
+                  }}
+                >
+                  CONVERSATIONS
+                </h1>
+                <p style={{ textAlign: "center", height: "4.5rem" }}>
+                  discuss health and well-being with Let's Talk or catch up with
+                  WINC alumni on our Podcast
+                </p>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/women-in-conversations/id1510124573"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div
+                    className="actionButton"
+                    style={{
+                      backgroundColor: "white",
+                      color: "black",
+                      border: "0.125rem solid black",
+                    }}
+                  >
+                    LISTEN
                   </div>
                 </a>
               </div>
