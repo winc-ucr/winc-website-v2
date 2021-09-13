@@ -1,0 +1,47 @@
+.hero {
+  min-height: calc(100vh - 20rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.heroDesktop, .heroMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (min-width: 746px) {
+  .heroMobile {
+    display: none;
+  }
+
+  .heroDesktop {
+    display: flex;
+  }
+}
+
+@media (max-width: 745px) {
+  .heroDesktop {
+    display: none;
+  }
+
+  .heroMobile {
+    display: flex;
+    margin: 5.25rem 0;
+  }
+
+  .hero {
+    display: flex;
+    min-height: calc(100vh - 20rem);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

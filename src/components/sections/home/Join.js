@@ -10,8 +10,9 @@ import "./home.css";
 
 const Join = () => {
   return (
-    <>
+    <section>
       <div
+        id="programs"
         style={{
           display: "flex",
           alignItems: "center",
@@ -238,7 +239,7 @@ const Join = () => {
             <div
               className="actionBox"
               style={{
-                backgroundColor: "#f9c74f",
+                backgroundColor: "#FCDCA8",
                 color: "#312720",
               }}
             >
@@ -280,7 +281,7 @@ const Join = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -28,7 +28,7 @@ const Footer = () => {
           <h3>Join</h3>
           <ul>
             <li>
-              <Link to="/programs">Programs</Link>
+              <Link to="/#programs">Programs</Link>
             </li>
             <li>
               <Link to="/events">Events</Link>

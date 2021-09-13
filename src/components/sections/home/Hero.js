@@ -6,7 +6,7 @@ import "./home.css";
 
 const Hero = () => {
   return (
-    <>
+    <section>
       <div
         style={{
           backgroundColor: "#FA6C5E",
@@ -107,7 +107,7 @@ const Hero = () => {
           <img src={Balsamiq} alt="balsamiq logo" className="logo-image" />
         </a>
       </div>
-    </>
+    </section>
   );
 };
 
