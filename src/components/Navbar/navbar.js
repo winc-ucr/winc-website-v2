@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, navigate, graphql, useStaticQuery } from "gatsby";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
+import WincLogo from "../../images/winclogo.png";
 import "./navbar.css";
 
 const navLinks = [
@@ -59,7 +60,7 @@ const NavigationBar = () => {
                 }}
                 to={"/"}
               >
-                WINC
+                WINC;
               </Link>
             </div>
           </div>

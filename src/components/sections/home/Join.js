@@ -166,6 +166,7 @@ const Join = () => {
                     textAlign: "center",
                     letterSpacing: "0.05rem",
                     height: "2rem",
+                    color: "#312720",
                   }}
                 >
                   PROF. & TECH DEV WORKSHOPS
@@ -238,7 +239,7 @@ const Join = () => {
               className="actionBox"
               style={{
                 backgroundColor: "#f9c74f",
-                color: "black",
+                color: "#312720",
               }}
             >
               <div className="actionBoxContent">
