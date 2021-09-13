@@ -15,6 +15,32 @@
   text-align: center;
   overflow: hidden;
 }
+.spotlight:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card > p {
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  margin: 0.125rem 0px 0px;
+}
+
+.card > div > p {
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  margin: 0.125rem 0px 0px;
+}
+
+.cardLinks > a {
+  text-decoration: none;
+  color: #808589;
+}
+
+.cardLinks > a:hover {
+  color: #FA6C5E;
+}
 
 @media (min-width: 746px) {
   .heroMobile {
