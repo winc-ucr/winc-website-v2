@@ -10,21 +10,24 @@ const Hero = () => {
       <div
         style={{
           backgroundColor: "#FA6C5E",
+          marginTop: '5.25rem'
         }}
       >
         <div className="hero">
           <div
             className="heroMobile"
-            style={{ height: "20rem", fontSize: "20rem" }}
+            style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            👩‍💻
+            <img className="heroMobile" src={"https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"}/>
+            {/* 👩 */}
           </div>
-          <div>
+          <div className="heroDesc" style={{maxWidth: '100vw'}}>
             <h1
               style={{
                 fontFamily: "'Manrope', sans-serif",
                 color: "white",
                 fontSize: "2rem",
+                marginBottom: '0.8rem',
               }}
             >
               We are
@@ -42,20 +45,25 @@ const Hero = () => {
               style={{
                 color: "#F0F0F0",
                 marginBottom: "2.5rem",
+                maxWidth: '25rem',
+                fontSize: " clamp(0.9rem, 1.75vw, 1.1rem)",
+                alignSelf: 'center'
               }}
             >
-              Description goes here
-              {/* WINC is dedicated to empowering and supporting a network of leading women in tech at the University of California, Riverside. */}
+              Supporting, celebratring, and advocating for women in all aspects
+              of the computing field at the University of California, Riverside
+              (UCR).
             </div>
             <div
               className="heroAction"
               style={{
                 display: "flex",
+                flexWrap: 'wrap',
               }}
             >
               <Link
                 to={"/about"}
-                style={{ marginRight: "1rem", textDecoration: "none" }}
+                style={{textDecoration: "none" }}
               >
                 <div
                   className="actionButton"
@@ -87,9 +95,10 @@ const Hero = () => {
           </div>
           <div
             className="heroDesktop"
-            style={{ height: "20rem", fontSize: "20rem" }}
+            style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            👩‍💻
+            <img className="heroDesktop" src={"https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"}/>
+            {/* 👩 */}
           </div>
         </div>
       </div>

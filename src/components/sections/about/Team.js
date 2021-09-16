@@ -29,13 +29,13 @@ const membersProfiles = {
     year: "3rd year",
     pronouns: "She/Her/Hers",
     major: "Comp Sci",
-    sign: "Taurus",
-    emoji: "🍒",
+    sign: "Cancer",
+    emoji: "⭐️",
     fun: "i grew up in sydney, australia!",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "https://www.linkedin.com/in/anchitabora/",
+    github: null,
+    portfolio: "https://anchita.xyz/",
+    email: "abora003@ucr.edu",
   },
   megan: {
     name: "Megan McDaniel",
@@ -47,10 +47,10 @@ const membersProfiles = {
     sign: "Libra",
     emoji: "🌱",
     fun: "I love cold weather!",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "https://www.linkedin.com/in/meganjwmcdaniel/",
+    github: null,
+    portfolio: null,
+    email: "mmcda006@ucr.edu",
   },
   krystal: {
     name: "Krystal Pothilat",
@@ -62,25 +62,25 @@ const membersProfiles = {
     sign: "Capricorn",
     emoji: "🦦",
     fun: "im scared of birds",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "linkedin.com/in/krystalpothilat",
+    github: null,
+    portfolio: null,
+    email: "kpoth001@ucr.edu",
   },
   cristina: {
     name: "Cristina Lawson",
     role: "Professional Development",
     src: CristinaImg,
-    year: " 1st year MS",
+    year: "1st year MS",
     pronouns: "She/Her/Hers",
     major: "Comp Sci",
     sign: "Virgo",
     emoji: "🤠",
     fun: "I can do that flower thing with my tongue!",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "https://www.linkedin.com/in/cristinalawson/",
+    github: "https://github.com/cristina95138",
+    portfolio: "https://www.cristinalawson.com/",
+    email: "claws004@ucr.edu",
   },
   arlene: {
     name: "Arlene Phimmasone",
@@ -90,12 +90,12 @@ const membersProfiles = {
     pronouns: "She/Her/Hers",
     major: "Comp Sci",
     sign: "Taurus",
-    emoji: "🍒",
+    emoji: "🐌",
     fun: "I cannot do a cartwheel.",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "www.linkedin.com/in/arlene-phimmasone",
+    github: null,
+    portfolio: null,
+    email: "aphim001@ucr.edu",
   },
   harini: {
     name: "Harini Venkatesan",
@@ -107,7 +107,7 @@ const membersProfiles = {
     sign: "Libra",
     emoji: "🤺",
     fun: "I have pierced my nose three times.",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/harini-venkatesan-784436169/",
     github: "",
     portfolio: "",
     email: "",
@@ -122,10 +122,10 @@ const membersProfiles = {
     sign: "Aries",
     emoji: "💫",
     fun: "i can't whistle",
-    linkedin: "",
-    github: "",
-    portfolio: "",
-    email: "",
+    linkedin: "https://www.linkedin.com/in/nishithagou",
+    github: null,
+    portfolio: null,
+    email: "nishitha256@gmail.com",
   },
   valerie: {
     name: "Valerie Wong",
@@ -182,7 +182,7 @@ const membersProfiles = {
     sign: "Cancer",
     emoji: "🥑",
     fun: "I am so scared of bugs including butterflies and ladybugs.",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ellie-cheng1/",
     github: "",
     portfolio: "",
     email: "",
@@ -191,7 +191,7 @@ const membersProfiles = {
 
 const Team = () => {
   return (
-    <section style={{ backgroundColor: "#F6ECE2" }}>
+    <section id="team" style={{ backgroundColor: "#F6ECE2" }}>
       <div
         className="team"
         style={{
@@ -204,7 +204,7 @@ const Team = () => {
           padding: `2.5rem`,
         }}
       >
-        <h1>✨Meet the Team✨</h1>
+        <h1 style={{color: '#203E4D',textShadow: '2px 2px #FCB0A8',fontFamily: "'Shrikhand', cursive", letterSpacing: '0.075rem'}}>✨Meet the Team✨</h1>
         <div
           style={{
             display: "grid",
@@ -244,8 +244,6 @@ const Team = () => {
                 <img
                   src={membersProfiles[member].src}
                   style={{
-                    width: "10rem",
-                    maxWidth: "10rem",
                     objectFit: "fit",
                     margin: 0,
                   }}
@@ -274,6 +272,7 @@ const Team = () => {
                   display: "flex",
                   marginTop: "0.25rem",
                   marginBottom: "0.5rem",
+                  height: "1.5rem",
                 }}
               >
                 {membersProfiles[member].linkedin ? (

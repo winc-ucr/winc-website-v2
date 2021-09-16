@@ -10,9 +10,8 @@ import "./home.css";
 
 const Join = () => {
   return (
-    <section>
+    <section style={{maxWidth: '100vw'}}>
       <div
-        id="programs"
         style={{
           display: "flex",
           alignItems: "center",
@@ -56,8 +55,9 @@ const Join = () => {
               alignItems: "center",
             }}
           >
-            insert/change graphic here
             <iframe
+            style={{maxWidth: '90vw'}}
+              id="programs"
               src="https://giphy.com/embed/UMMLUBnxmXIBytqZ8N"
               width="480"
               height="270"
@@ -173,8 +173,8 @@ const Join = () => {
                   PROF. & TECH DEV WORKSHOPS
                 </h1>
                 <p style={{ textAlign: "center", height: "4.5rem" }}>
-                  Tried and true methods and insights from our network of
-                  members to break into tech.
+                  Tried and true methods from our network of members to break
+                  into tech.
                 </p>
                 <a
                   href="https://www.youtube.com/channel/UCpg9Xu-WaFM3KRN35f6hPNA"
@@ -257,8 +257,8 @@ const Join = () => {
                   CONVERSATIONS
                 </h1>
                 <p style={{ textAlign: "center", height: "4.5rem" }}>
-                  discuss health and well-being with Let's Talk or catch up with
-                  WINC alumni on our Podcast
+                  discuss health and well-being with "Let's Talk" and catch up
+                  with WINC alumni on our Podcast
                 </p>
                 <a
                   href="https://podcasts.apple.com/us/podcast/women-in-conversations/id1510124573"

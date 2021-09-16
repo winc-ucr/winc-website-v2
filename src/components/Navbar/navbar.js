@@ -23,6 +23,7 @@ const NavigationBar = () => {
           top: 0,
           padding: "0 2rem",
           width: "100%",
+          maxWidth: '100vw',
           height: "5.25rem",
           display: "flex",
           alignContent: "center",

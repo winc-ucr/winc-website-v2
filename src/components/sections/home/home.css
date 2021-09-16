@@ -2,7 +2,8 @@
 
 .heroTypist > * {
   color: white !important;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2vw, 2.5rem);
+  line-height: 1.15;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -14,14 +15,19 @@
   overflow: hidden;
 }
 
+.heroDesc {
+  margin-right: 2rem;
+  width: 100%;
+}
+
 .hero {
-  min-height: calc(100vh - 20rem);
+  min-height: calc(100vh - 10rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 60rem;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 1.0875rem 1.45rem;
 }
 
 .heroTypist {
@@ -35,7 +41,7 @@
 
 .actionButton {
   text-align: center;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
   height: 2.5rem;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
@@ -55,6 +61,7 @@
   justify-content: center;
   border-radius: 0.75rem;
   padding: 1rem;
+  max-width: 70vw;
 }
 
 .actionBoxContent {
@@ -74,7 +81,12 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 746px) {
+.heroAction > * {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 901px) {
   .heroMobile {
     display: none;
   }
@@ -94,19 +106,26 @@
   }
 }
 
-@media (max-width: 745px) {
+@media (max-width: 900px) {
   .heroDesktop {
     display: none;
   }
 
   .heroMobile {
     display: flex;
-    margin: 5.25rem 0;
+  }
+
+  .heroDesc {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero {
     display: flex;
-    min-height: calc(100vh - 20rem);
+    min-height: calc(100vh - 10rem);
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -118,4 +137,5 @@
     align-items: center;
     justify-content: center;
   }
+
 }

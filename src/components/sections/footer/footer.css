@@ -34,6 +34,7 @@
 }
 
 .footer > * > * > li {
+  font-Size: clamp(0.85rem, 1.5vw, 1rem);
   display: list-item;
   list-style: none;
 }
