@@ -10,7 +10,7 @@ const Hero = () => {
       <div
         style={{
           backgroundColor: "#FA6C5E",
-          marginTop: '5.25rem'
+          marginTop: "5.25rem",
         }}
       >
         <div className="hero">
@@ -18,16 +18,21 @@ const Hero = () => {
             className="heroMobile"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img className="heroMobile" src={"https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"}/>
+            <img
+              className="heroMobile"
+              src={
+                "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"
+              }
+            />
             {/* 👩 */}
           </div>
-          <div className="heroDesc" style={{maxWidth: '100vw'}}>
+          <div className="heroDesc" style={{ maxWidth: "100vw" }}>
             <h1
               style={{
                 fontFamily: "'Manrope', sans-serif",
                 color: "white",
                 fontSize: "2rem",
-                marginBottom: '0.8rem',
+                marginBottom: "0.8rem",
               }}
             >
               We are
@@ -45,9 +50,9 @@ const Hero = () => {
               style={{
                 color: "#F0F0F0",
                 marginBottom: "2.5rem",
-                maxWidth: '25rem',
+                maxWidth: "25rem",
                 fontSize: " clamp(0.9rem, 1.75vw, 1.1rem)",
-                alignSelf: 'center'
+                alignSelf: "center",
               }}
             >
               Supporting, celebratring, and advocating for women in all aspects
@@ -58,13 +63,10 @@ const Hero = () => {
               className="heroAction"
               style={{
                 display: "flex",
-                flexWrap: 'wrap',
+                flexWrap: "wrap",
               }}
             >
-              <Link
-                to={"/about"}
-                style={{textDecoration: "none" }}
-              >
+              <Link to={"/about"} style={{ textDecoration: "none" }}>
                 <div
                   className="actionButton"
                   style={{
@@ -97,7 +99,12 @@ const Hero = () => {
             className="heroDesktop"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img className="heroDesktop" src={"https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"}/>
+            <img
+              className="heroDesktop"
+              src={
+                "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"
+              }
+            />
             {/* 👩 */}
           </div>
         </div>

@@ -4,12 +4,14 @@ import Seo from "../components/seo";
 import "../components/sections/home/home.css";
 import Hero from "../components/sections/about/Hero";
 import Team from "../components/sections/about/Team";
+import JoinAbout from "../components/sections/about/Join";
 
 const About = () => {
   return (
     <Layout>
       <Seo title="Home" />
       <Hero />
+      <JoinAbout />
       <Team />
     </Layout>
   );

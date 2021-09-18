@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           width: "100%",
         }}
       >
-        <main style={{width: '100%'}}>{children}</main>
+        <main style={{ width: "100%" }}>{children}</main>
       </div>
       <Footer />
     </>

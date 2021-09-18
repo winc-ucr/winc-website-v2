@@ -191,7 +191,7 @@ const membersProfiles = {
 
 const Team = () => {
   return (
-    <section id="team" style={{ backgroundColor: "#F6ECE2" }}>
+    <section id="team" style={{ backgroundColor: "#F7D1B8" }}>
       <div
         className="team"
         style={{
@@ -204,7 +204,16 @@ const Team = () => {
           padding: `2.5rem`,
         }}
       >
-        <h1 style={{color: '#203E4D',textShadow: '2px 2px #FCB0A8',fontFamily: "'Shrikhand', cursive", letterSpacing: '0.075rem'}}>✨Meet the Team✨</h1>
+        <h1
+          style={{
+            color: "#203E4D",
+            textShadow: "2px 2px #FCB0A8",
+            fontFamily: "'Shrikhand', cursive",
+            letterSpacing: "0.075rem",
+          }}
+        >
+          ✨Meet the Team✨
+        </h1>
         <div
           style={{
             display: "grid",

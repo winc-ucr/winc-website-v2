@@ -10,7 +10,7 @@ import "./home.css";
 
 const Join = () => {
   return (
-    <section style={{maxWidth: '100vw'}}>
+    <section style={{ maxWidth: "100vw" }}>
       <div
         style={{
           display: "flex",
@@ -56,7 +56,7 @@ const Join = () => {
             }}
           >
             <iframe
-            style={{maxWidth: '90vw'}}
+              style={{ maxWidth: "90vw" }}
               id="programs"
               src="https://giphy.com/embed/UMMLUBnxmXIBytqZ8N"
               width="480"

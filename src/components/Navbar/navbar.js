@@ -23,7 +23,7 @@ const NavigationBar = () => {
           top: 0,
           padding: "0 2rem",
           width: "100%",
-          maxWidth: '100vw',
+          maxWidth: "100vw",
           height: "5.25rem",
           display: "flex",
           alignContent: "center",
@@ -79,7 +79,7 @@ const NavigationBar = () => {
           </div>
           <a
             className="navbarAction"
-            href="https://linktr.ee/winc_ucr"
+            href="https://join.slack.com/t/wincucr/shared_invite/zt-59sskstf-vBvwxMNk63VEH~9NNfXj6Q"
             target="_blank"
             style={{ textDecoration: "none" }}
           >
