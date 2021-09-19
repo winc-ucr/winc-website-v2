@@ -9,7 +9,7 @@ import JoinAbout from "../components/sections/about/Join";
 const About = () => {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="About" />
       <Hero />
       <JoinAbout />
       <Team />

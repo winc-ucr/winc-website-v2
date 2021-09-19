@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.9.0",
+    "@fullcalendar/interaction": "^5.9.0",
+    "@fullcalendar/react": "^5.9.0",
     "gatsby": "^3.13.0",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-image": "^1.13.0",

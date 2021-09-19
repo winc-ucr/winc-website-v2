@@ -11,7 +11,7 @@ import {
   VscChromeClose,
   VscChromeMinimize,
 } from "react-icons/vsc";
-import { FiExternalLink } from "react-icons/fi"
+import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineExpandAlt } from "react-icons/ai";
 import { SiSlack } from "react-icons/si";
 import Balsamiq from "../../../images/balsamiq.png";
@@ -68,7 +68,6 @@ const JoinAbout = () => {
                 left: "-1.25rem",
                 borderBottom: "0.125rem solid #203E4D",
                 paddingLeft: "1rem",
-                height: "0.125rem",
                 width: "calc(100% + 2.5rem)",
               }}
             >
@@ -251,14 +250,18 @@ const JoinAbout = () => {
         <a
           href="https://linktr.ee/winc_ucr"
           target="_blank"
-          style={{ textDecoration: "none", cursor: "not-allowed", marginTop: '2rem' }}
+          style={{
+            textDecoration: "none",
+            cursor: "not-allowed",
+            marginTop: "2rem",
+          }}
         >
           <div
             className="actionButton"
             style={{
               backgroundColor: "#F6EEE3",
               border: "0.125rem solid #203E4D",
-              color: '#203E4D'
+              color: "#203E4D",
             }}
           >
             <div
@@ -269,7 +272,7 @@ const JoinAbout = () => {
               }}
             >
               All links
-              <FiExternalLink style={{marginLeft: '0.25rem'}}/>
+              <FiExternalLink style={{ marginLeft: "0.25rem" }} />
             </div>
           </div>
         </a>
