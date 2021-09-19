@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import Typist from "react-typist";
 import Balsamiq from "../../../images/balsamiq.png";
+import HeroImage from '../../../images/heroImage.jpeg'
 import "./home.css";
 
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
             <img
               className="heroMobile"
               src={
-                "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"
+                HeroImage
               }
             />
             {/* 👩 */}
@@ -101,9 +102,7 @@ const Hero = () => {
           >
             <img
               className="heroDesktop"
-              src={
-                "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/asset/b22b1a654b93/sub-buzz-661-1619655668-13.png"
-              }
+              src={HeroImage}
             />
             {/* 👩 */}
           </div>

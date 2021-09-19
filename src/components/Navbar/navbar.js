@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link, navigate, graphql, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
+import React, { useState } from "react";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
-import WincLogo from "../../images/winclogo.png";
 import "./navbar.css";
 
 const navLinks = [

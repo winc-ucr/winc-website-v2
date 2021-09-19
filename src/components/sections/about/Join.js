@@ -1,20 +1,13 @@
-import { Link } from "gatsby";
 import React from "react";
-import Typist from "react-typist";
-
+import { AiOutlineExpandAlt } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
 import { MdNotificationsNone } from "react-icons/md";
+import { SiSlack } from "react-icons/si";
 import {
-  VscBroadcast,
-  VscOrganization,
-  VscLink,
-  VscSmiley,
   VscChromeClose,
   VscChromeMinimize,
+  VscOrganization,
 } from "react-icons/vsc";
-import { FiExternalLink } from "react-icons/fi";
-import { AiOutlineExpandAlt } from "react-icons/ai";
-import { SiSlack } from "react-icons/si";
-import Balsamiq from "../../../images/balsamiq.png";
 import "./about.css";
 
 const JoinAbout = () => {

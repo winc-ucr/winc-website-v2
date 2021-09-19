@@ -1,11 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
-import Typist from "react-typist";
-
-import { BsPeopleFill } from "react-icons/bs";
-import { VscBroadcast, VscOrganization, VscSmiley } from "react-icons/vsc";
 import { BsMicFill } from "react-icons/bs";
-import Balsamiq from "../../../images/balsamiq.png";
+import { VscBroadcast, VscOrganization, VscSmiley } from "react-icons/vsc";
 import "./home.css";
 
 const Join = () => {

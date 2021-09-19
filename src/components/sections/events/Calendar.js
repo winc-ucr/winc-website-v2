@@ -2,62 +2,12 @@ import React from "react";
 import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
+import {FaExternalLinkAlt} from 'react-icons/fa'
 
-const eventExpand = {
-  "Welcome to WINC [WINC panel]": {
-    type: 'Recruitment',
-    time: '2:30PM',
-    link: 'https://ucr.zoom.us/j/99937718388',
-  },
-  "Dealing with Hybrid Classes": {
-    type: 'Recruitment',
-    time: '2:30PM',
-    link: 'https://ucr.zoom.us/j/92367209083?pwd=eWhNS21UR1l1UGZLczJtSUFsY1FRdz09',
-  },
-  "Land That SWE Internship & Intern AMA": {
-    type: 'General Meeting',
-    time: '7:00PM',
-    link: 'https://ucr.zoom.us/j/96741730329',
-  },
-  "How to Make the Best of your Summer": {
-    type: 'Technical Workshop',
-    time: 'TBD',
-    link: 'https://us02web.zoom.us/j/7181383962',
-  }, 
-  "Industry Professional Panel": {
-    type: 'Panel',
-    time: 'TBD',
-    link: '',
-  },
-  "Virtual Social/GameNight" : {
-    type: 'Social',
-    time: '7:00PM',
-    link: '',
-  },
-  "Cutie Hack": {
-    type: 'Technical Workshop',
-    time: 'TBD',
-    link: '',
-  },
-  "Scientific Communication in Computing": {
-    type: 'Graduate Session',
-    time: '7:00PM',
-    link: 'https://ucr.zoom.us/j/93690075538',
-  },
-  "World of Computing": {
-    type: 'General Meeting',
-    time: '7:00PM',
-    link: 'https://ucr.zoom.us/j/96714866468',
-  }, 
-  "Intro to Git/Github": {
-    type: 'General Meeting',
-    time: 'TBD',
-    link: 'https://us02web.zoom.us/j/7181383962',
-  }, 
-}
+import { eventExpand } from "../../../utils/events";
 
 const events = [
-  { title: "Welcome to WINC [WINC panel]", date: "2021-09-18" },
+  { title: "Welcome to WINC [WINC panel]", date: "2021-09-21" },
   { title: "Dealing with Hybrid Classes", date: "2021-09-27" },
   { title: "Land That SWE Internship & Intern AMA", date: "2021-10-05" },
   { title: "How to Make the Best of your Summer", date: "2021-10-12" },
@@ -67,7 +17,7 @@ const events = [
   { title: "Scientific Communication in Computing", date: "2021-11-09" },
   { title: "World of Computing", date: "2021-11-16" },
   { title: "Intro to Git/Github", date: "2021-11-23" },
-]
+];
 const renderEventContent = (eventInfo) => {
   console.log(eventInfo);
   return (
@@ -82,11 +32,15 @@ const renderEventContent = (eventInfo) => {
         textDecoration: "none",
         padding: "0.5rem",
         color: "#F6EEE3",
-        cursor: (eventExpand[eventInfo.event.title].link) ? 'pointer' : 'not-allowed'
+        cursor: eventExpand[eventInfo.event.title].link
+          ? "pointer"
+          : "not-allowed",
       }}
       href={eventExpand[eventInfo.event.title].link}
     >
-      <b style={{whiteSpace: "initial"}}>{eventExpand[eventInfo.event.title].time}</b>
+      <b style={{ whiteSpace: "initial" }}>
+        {eventExpand[eventInfo.event.title].time}
+      </b>
       <p style={{ width: "100%", whiteSpace: "initial", marginBottom: 0 }}>
         {eventInfo.event.title}
       </p>
@@ -98,10 +52,10 @@ const renderEventContent = (eventInfo) => {
           borderRadius: "2em",
           padding: "0px 0.75rem",
           whiteSpace: "initial",
-          marginTop: '0.5rem',
+          marginTop: "0.5rem",
           marginBottom: 0,
-          textAlign: 'center',
-          lineHeight: 1.2
+          textAlign: "center",
+          lineHeight: 1.2,
         }}
       >
         {eventExpand[eventInfo.event.title].type}
@@ -112,19 +66,51 @@ const renderEventContent = (eventInfo) => {
 
 const Calendar = () => {
   return (
-    <div
+    <section
       style={{
         padding: "4rem",
         marginTop: "5.25rem",
+        backgroundColor: "#FA6C5E",
+        display: 'flex',
+        flexDirection: 'column'
       }}
     >
-      <FullCalendar
-        plugins={[dayGridPlugin, interactionPlugin]}
-        initialView="dayGridMonth"
-        eventContent={renderEventContent}
-        events={events}
-      />
-    </div>
+      <h1 style={{ color: "white", marginBottom: '0.5rem'}}>Events</h1>
+      <p style={{ color: "#ececec" }}>
+        See our calendar for all our events. Clicking each event will take you
+        to the zoom call. The calendar is best when viewed on desktop.
+      </p>
+      <a href="#eventcards" style={{
+        textDecoration: 'none',
+        backgroundColor: '#F7D1B8',
+        padding: '0.5rem',
+        width: '10rem',
+        marginBottom: '1rem',
+        textAlign: 'center',
+        borderRadius: '1rem',
+        color: 'black',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        See Table View
+        <FaExternalLinkAlt style={{marginLeft: '0.5rem'}}/>
+      </a>
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "1rem",
+          border: "0.15rem solid #F4C2A1",
+        }}
+      >
+        <FullCalendar
+          plugins={[dayGridPlugin]}
+          initialView="dayGridMonth"
+          eventContent={renderEventContent}
+          events={events}
+        />
+      </div>
+    </section>
   );
 };
 

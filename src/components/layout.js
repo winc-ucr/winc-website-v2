@@ -5,11 +5,9 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
-
-import Header from "./header";
+import * as React from "react";
 import "./layout.css";
 import NavigationBar from "./Navbar/navbar";
 import Footer from "./sections/footer/footer";

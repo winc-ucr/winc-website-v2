@@ -1,7 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
 import "./about.css";
-
+import HeroImage from '../../../images/gymPhoto.jpeg'
 const Hero = () => {
   return (
     <section style={{ marginTop: "5.25rem" }}>
@@ -11,9 +10,7 @@ const Hero = () => {
           style={{ width: "30rem", maxWidth: "100vw", fontSize: "20rem" }}
         >
           <img
-            src={
-              "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/30/4/asset/13ec16e38007/sub-buzz-1135-1619756508-15.png"
-            }
+            src={HeroImage}
           />
         </div>
         <div style={{ maxWidth: "100vw", marginRight: "2rem" }}>
@@ -49,9 +46,7 @@ const Hero = () => {
           style={{ maxWidth: "30rem", height: "531px", fontSize: "20rem" }}
         >
           <img
-            src={
-              "https://img.buzzfeed.com/buzzfeed-static/static/2021-04/30/4/asset/13ec16e38007/sub-buzz-1135-1619756508-15.png"
-            }
+            src={HeroImage}
           />
         </div>
       </div>

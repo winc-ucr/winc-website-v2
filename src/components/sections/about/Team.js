@@ -1,23 +1,22 @@
-import { Link } from "gatsby";
 import React from "react";
-import "./about.css";
 import {
-  AiFillLinkedin,
   AiFillGithub,
+  AiFillLinkedin,
   AiOutlineHome,
   AiOutlineMail,
 } from "react-icons/ai";
 import AnchitaImg from "../../../images/board/anchita.png";
-import MeganImg from "../../../images/board/megan.png";
-import KrystalImg from "../../../images/board/krystal.png";
-import CristinaImg from "../../../images/board/cristina.png";
-import ArleneImg from "../../../images/board/arlene.png";
-import HariniImg from "../../../images/board/harini.png";
-import NishithaImg from "../../../images/board/nishitha.png";
-import ValerieImg from "../../../images/board/valerie.png";
 import AndreiImg from "../../../images/board/andrei.png";
 import AnmolImg from "../../../images/board/anmol.png";
+import ArleneImg from "../../../images/board/arlene.png";
+import CristinaImg from "../../../images/board/cristina.png";
 import EllieImg from "../../../images/board/ellie.png";
+import HariniImg from "../../../images/board/harini.png";
+import KrystalImg from "../../../images/board/krystal.png";
+import MeganImg from "../../../images/board/megan.png";
+import NishithaImg from "../../../images/board/nishitha.png";
+import ValerieImg from "../../../images/board/valerie.png";
+import "./about.css";
 
 const srcPrefix = "../../../images/board";
 

@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link, navigate, graphql, useStaticQuery } from "gatsby";
-import { FaDiscord, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "gatsby";
+import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-
+import { FaDiscord, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
 import "./footer.css";
 
