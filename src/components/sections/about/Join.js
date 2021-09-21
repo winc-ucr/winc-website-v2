@@ -245,7 +245,6 @@ const JoinAbout = () => {
           target="_blank"
           style={{
             textDecoration: "none",
-            cursor: "not-allowed",
             marginTop: "2rem",
           }}
         >
