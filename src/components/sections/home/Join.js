@@ -127,7 +127,7 @@ const Join = () => {
                   MENTORSHIP
                 </h1>
                 <p style={{ textAlign: "center", height: "4.5rem" }}>
-                  learn from your peers about academia, industry, research,
+                  Learn from your peers about academia, industry, research,
                   internships and much more.
                 </p>
                 <a
@@ -214,7 +214,7 @@ const Join = () => {
                   inclusive bonding events.
                 </p>
                 <a
-                  href="https://discord.gg/RH53n2dCFn"
+                  href="https://wincucr.slack.com/ssb/redirect"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
@@ -226,7 +226,7 @@ const Join = () => {
                       border: "0.125rem solid black",
                     }}
                   >
-                    DISCORD
+                    SLACK
                   </div>
                 </a>
               </div>
@@ -252,7 +252,7 @@ const Join = () => {
                   CONVERSATIONS
                 </h1>
                 <p style={{ textAlign: "center", height: "4.5rem" }}>
-                  discuss health and well-being with "Let's Talk" and catch up
+                  Discuss health and well-being with "Let's Talk" and catch up
                   with WINC alumni on our Podcast
                 </p>
                 <a

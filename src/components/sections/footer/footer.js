@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaDiscord, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaYoutube, FaSlack } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
 import "./footer.css";
 
@@ -38,8 +38,8 @@ const Footer = () => {
           <h3>Stay in Touch</h3>
           <ul>
             <li>
-              <a href="" target="_blank">
-                Newsletter
+              <a href="https://wincucr.slack.com/ssb/redirect" target="_blank">
+                Slack
               </a>
             </li>
             <li>
@@ -70,6 +70,9 @@ const Footer = () => {
         </a>
         <a href="https://github.com/winc-ucr" target="_blank">
           <VscGithubInverted size="2em" />
+        </a>
+        <a href="https://wincucr.slack.com/ssb/redirect" target="_blank">
+          <FaSlack size="2em" />
         </a>
         <a href="https://www.instagram.com/wincucr/" target="_blank">
           <AiFillInstagram size="2em" />

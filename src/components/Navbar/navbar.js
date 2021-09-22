@@ -78,7 +78,7 @@ const NavigationBar = () => {
           </div>
           <a
             className="navbarAction"
-            href="https://join.slack.com/t/wincucr/shared_invite/zt-59sskstf-vBvwxMNk63VEH~9NNfXj6Q"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe5M-kEntAmPHnHNcerN6F8G5eevJs6zQJgEt3X3hcj_eNV3w/viewform"
             target="_blank"
             style={{ textDecoration: "none" }}
           >

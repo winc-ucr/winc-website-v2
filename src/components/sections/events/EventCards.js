@@ -21,11 +21,6 @@ const EventCards = () => {
 
     setPast(currPast);
     setUpcoming(currUpcoming);
-
-    console.log("past: ");
-    console.log(past);
-    console.log("upcoming: ");
-    console.log(upcoming);
   }, []);
 
   return (

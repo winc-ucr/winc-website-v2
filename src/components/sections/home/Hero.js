@@ -79,7 +79,7 @@ const Hero = () => {
                 </div>
               </Link>
               <a
-                href="https://linktr.ee/winc_ucr"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe5M-kEntAmPHnHNcerN6F8G5eevJs6zQJgEt3X3hcj_eNV3w/viewform"
                 target="_blank"
                 style={{ textDecoration: "none" }}
               >
