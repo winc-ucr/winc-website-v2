@@ -2,7 +2,7 @@ import React from "react";
 import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
-import {FaExternalLinkAlt} from 'react-icons/fa'
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { eventExpand } from "../../../utils/events";
 
@@ -71,30 +71,33 @@ const Calendar = () => {
         padding: "4rem",
         marginTop: "5.25rem",
         backgroundColor: "#FA6C5E",
-        display: 'flex',
-        flexDirection: 'column'
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <h1 style={{ color: "white", marginBottom: '0.5rem'}}>Events</h1>
+      <h1 style={{ color: "white", marginBottom: "0.5rem" }}>Events</h1>
       <p style={{ color: "#ececec" }}>
         See our calendar for all our events. Clicking each event will take you
         to the zoom call. The calendar is best when viewed on desktop.
       </p>
-      <a href="#eventcards" style={{
-        textDecoration: 'none',
-        backgroundColor: '#F7D1B8',
-        padding: '0.5rem',
-        width: '10rem',
-        marginBottom: '1rem',
-        textAlign: 'center',
-        borderRadius: '1rem',
-        color: 'black',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
+      <a
+        href="#eventcards"
+        style={{
+          textDecoration: "none",
+          backgroundColor: "#F7D1B8",
+          padding: "0.5rem",
+          width: "10rem",
+          marginBottom: "1rem",
+          textAlign: "center",
+          borderRadius: "1rem",
+          color: "black",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         See Table View
-        <FaExternalLinkAlt style={{marginLeft: '0.5rem'}}/>
+        <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
       </a>
       <div
         style={{

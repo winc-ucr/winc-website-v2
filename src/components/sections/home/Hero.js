@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import Typist from "react-typist";
 import Balsamiq from "../../../images/balsamiq.png";
-import HeroImage from '../../../images/heroImage.jpeg'
+import HeroImage from "../../../images/heroImage.jpeg";
 import "./home.css";
 
 const Hero = () => {
@@ -19,12 +19,7 @@ const Hero = () => {
             className="heroMobile"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img
-              className="heroMobile"
-              src={
-                HeroImage
-              }
-            />
+            <img className="heroMobile" src={HeroImage} />
             {/* 👩 */}
           </div>
           <div className="heroDesc" style={{ maxWidth: "100vw" }}>
@@ -100,10 +95,7 @@ const Hero = () => {
             className="heroDesktop"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img
-              className="heroDesktop"
-              src={HeroImage}
-            />
+            <img className="heroDesktop" src={HeroImage} />
             {/* 👩 */}
           </div>
         </div>

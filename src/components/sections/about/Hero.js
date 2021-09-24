@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import HeroImage from '../../../images/gymPhoto.jpeg'
+import HeroImage from "../../../images/gymPhoto.jpeg";
 const Hero = () => {
   return (
     <section style={{ marginTop: "5.25rem" }}>
@@ -9,9 +9,7 @@ const Hero = () => {
           className="heroMobile"
           style={{ width: "30rem", maxWidth: "100vw", fontSize: "20rem" }}
         >
-          <img
-            src={HeroImage}
-          />
+          <img src={HeroImage} />
         </div>
         <div style={{ maxWidth: "100vw", marginRight: "2rem" }}>
           <h1>What is WINC?</h1>
@@ -45,9 +43,7 @@ const Hero = () => {
           className="heroDesktop"
           style={{ maxWidth: "30rem", height: "531px", fontSize: "20rem" }}
         >
-          <img
-            src={HeroImage}
-          />
+          <img src={HeroImage} />
         </div>
       </div>
     </section>
