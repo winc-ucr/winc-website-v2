@@ -31,7 +31,7 @@ const EventCards = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "4rem",
+        padding: "2rem 0",
       }}
     >
       <h1>Events</h1>
@@ -44,13 +44,14 @@ const EventCards = () => {
             display: "grid",
             gap: "2rem 1rem",
             width: "100%",
-            maxWidth: "75rem",
             alignItems: "start",
             justifyItems: "center",
+            gridTemplateColumns: "repeat(auto-fill, minmax(20rem, 1fr))",
           }}
         >
           <div
             style={{
+              width: "100%",
               maxWidth: "25rem",
               display: "flex",
               flexDirection: "column",
@@ -66,9 +67,10 @@ const EventCards = () => {
               }
               return (
                 <div
+                  className="eventcard"
                   style={{
-                    width: "100%",
                     minWidth: "19rem",
+                    minHeight: "12rem",
                     minHeight: "12rem",
                     backgroundColor: "#F6EEE3",
                     display: "flex",
@@ -82,7 +84,6 @@ const EventCards = () => {
                       width: "8rem",
                       borderRadius: "0.5rem 0 0 0.5rem",
                       backgroundColor: "#203E4D",
-                      padding: "0 1rem",
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
@@ -125,6 +126,7 @@ const EventCards = () => {
             {past.length === 0 ? <p>No past events</p> : null}
             {past.map((event) => (
               <div
+                className="eventcard"
                 style={{
                   width: "100%",
                   minWidth: "19rem",

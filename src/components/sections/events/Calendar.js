@@ -25,6 +25,7 @@ const renderEventContent = (eventInfo) => {
       target="_blank"
       style={{
         width: "100%",
+        maxWidth: "100vw",
         display: "flex",
         flexDirection: "column",
         backgroundColor: "#FA6C5E",

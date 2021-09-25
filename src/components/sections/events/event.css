@@ -1,3 +1,23 @@
 .eventGrid {
-  grid-template-columns: minmax(25rem, 1fr) minmax(25rem, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  max-width: 60rem;
 }
+
+
+@media (max-width: 900px) {
+  .eventcard {
+    max-width: 20rem;
+  }
+
+  .eventGrid {
+    max-width: none;
+  }
+
+  .fc .fc-toolbar {
+    display: inline;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+}
+ 
