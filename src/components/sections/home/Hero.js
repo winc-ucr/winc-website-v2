@@ -19,7 +19,7 @@ const Hero = () => {
             className="heroMobile"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img className="heroMobile" src={HeroImage} />
+            <img className="heroMobile" alt="heroimg" src={HeroImage} />
             {/* 👩 */}
           </div>
           <div className="heroDesc" style={{ maxWidth: "100vw" }}>
@@ -76,6 +76,7 @@ const Hero = () => {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSe5M-kEntAmPHnHNcerN6F8G5eevJs6zQJgEt3X3hcj_eNV3w/viewform"
                 target="_blank"
+                rel="noreferrer"
                 style={{ textDecoration: "none" }}
               >
                 <div
@@ -95,7 +96,7 @@ const Hero = () => {
             className="heroDesktop"
             style={{ maxWidth: "28rem", fontSize: "20rem" }}
           >
-            <img className="heroDesktop" src={HeroImage} />
+            <img className="heroDesktop" alt="heroimg" src={HeroImage} />
             {/* 👩 */}
           </div>
         </div>
@@ -110,7 +111,7 @@ const Hero = () => {
           height: "10rem",
         }}
       >
-        <a href="https://balsamiq.com/" target="_blank">
+        <a href="https://balsamiq.com/" target="_blank" rel="noreferrer">
           <img src={Balsamiq} alt="balsamiq logo" className="logo-image" />
         </a>
       </div>

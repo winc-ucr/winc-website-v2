@@ -243,6 +243,7 @@ const JoinAbout = () => {
         <a
           href="https://linktr.ee/winc_ucr"
           target="_blank"
+          rel="norefferrer"
           style={{
             textDecoration: "none",
             marginTop: "2rem",

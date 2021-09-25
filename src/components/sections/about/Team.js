@@ -18,8 +18,6 @@ import NishithaImg from "../../../images/board/nishitha.png";
 import ValerieImg from "../../../images/board/valerie.png";
 import "./about.css";
 
-const srcPrefix = "../../../images/board";
-
 const membersProfiles = {
   anchita: {
     name: "Anchita Bora",
@@ -284,17 +282,29 @@ const Team = () => {
                 }}
               >
                 {membersProfiles[member].linkedin ? (
-                  <a href={membersProfiles[member].linkedin} target="_blank">
+                  <a
+                    href={membersProfiles[member].linkedin}
+                    rel="norefferrer"
+                    target="_blank"
+                  >
                     <AiFillLinkedin size="1.25em" />
                   </a>
                 ) : null}
                 {membersProfiles[member].github ? (
-                  <a href={membersProfiles[member].github} target="_blank">
+                  <a
+                    href={membersProfiles[member].github}
+                    rel="norefferrer"
+                    target="_blank"
+                  >
                     <AiFillGithub size="1.25em" />
                   </a>
                 ) : null}
                 {membersProfiles[member].portfolio ? (
-                  <a href={membersProfiles[member].portfolio} target="_blank">
+                  <a
+                    href={membersProfiles[member].portfolio}
+                    rel="norefferrer"
+                    target="_blank"
+                  >
                     <AiOutlineHome size="1.25em" />
                   </a>
                 ) : null}
@@ -302,6 +312,7 @@ const Team = () => {
                   <a
                     href={`mailto: ${membersProfiles[member].email}`}
                     target="_blank"
+                    rel="norefferrer"
                   >
                     <AiOutlineMail size="1.25em" />
                   </a>

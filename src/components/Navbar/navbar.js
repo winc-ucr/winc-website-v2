@@ -80,6 +80,7 @@ const NavigationBar = () => {
             className="navbarAction"
             href="https://docs.google.com/forms/d/e/1FAIpQLSe5M-kEntAmPHnHNcerN6F8G5eevJs6zQJgEt3X3hcj_eNV3w/viewform"
             target="_blank"
+            rel="norefferrer"
             style={{ textDecoration: "none" }}
           >
             <div

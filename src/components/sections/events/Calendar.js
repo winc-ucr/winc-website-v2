@@ -1,9 +1,7 @@
-import React from "react";
-import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
-import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
+import FullCalendar from "@fullcalendar/react"; // must go before plugins
+import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
 import { eventExpand } from "../../../utils/events";
 
 const events = [
@@ -23,6 +21,7 @@ const renderEventContent = (eventInfo) => {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       style={{
         width: "100%",
         maxWidth: "100vw",

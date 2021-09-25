@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { eventExpand } from "../../../utils/events";
 import "./event.css";
 
@@ -6,11 +6,10 @@ const EventCards = () => {
   const [past, setPast] = useState([]);
   const [upcoming, setUpcoming] = useState([]);
 
-  const currTime = new Date();
-
   useEffect(() => {
     let currPast = [];
     let currUpcoming = [];
+    const currTime = new Date();
     Array.from(Object.keys(eventExpand)).forEach((event) => {
       if (currTime > eventExpand[event].endDate) {
         currPast.push(event);
@@ -66,17 +65,23 @@ const EventCards = () => {
                 return null;
               }
               return (
-                <div
+                <a
+                  target="_blank"
+                  rel="norefferrer"
+                  href={eventExpand[event].link}
+                  key={event}
                   className="eventcard"
                   style={{
+                    textDecoration: "none",
+                    color: "black",
                     minWidth: "19rem",
-                    minHeight: "12rem",
                     minHeight: "12rem",
                     backgroundColor: "#F6EEE3",
                     display: "flex",
                     borderRadius: "0.5rem",
                     filter: "drop-shadow(0.125rem 0.125rem 0.125rem)",
                     marginBottom: "2rem",
+                    cursor: eventExpand[event].link ? "pointer" : "not-allowed",
                   }}
                 >
                   <div
@@ -109,7 +114,7 @@ const EventCards = () => {
                     </p>
                     <p style={{ margin: 0 }}>{eventExpand[event].desc}</p>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
@@ -125,9 +130,15 @@ const EventCards = () => {
             <h1>Past Events</h1>
             {past.length === 0 ? <p>No past events</p> : null}
             {past.map((event) => (
-              <div
+              <a
+                target="_blank"
+                rel="norefferrer"
+                href={eventExpand[event].link}
+                key={event}
                 className="eventcard"
                 style={{
+                  textDecoration: "none",
+                  color: "black",
                   width: "100%",
                   minWidth: "19rem",
                   minHeight: "12rem",
@@ -136,6 +147,7 @@ const EventCards = () => {
                   borderRadius: "0.5rem",
                   filter: "drop-shadow(0.125rem 0.125rem 0.125rem)",
                   marginBottom: "2rem",
+                  cursor: eventExpand[event].link ? "pointer" : "not-allowed",
                 }}
               >
                 <div
@@ -168,7 +180,7 @@ const EventCards = () => {
                   </p>
                   <p style={{ margin: 0 }}>{eventExpand[event].desc}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

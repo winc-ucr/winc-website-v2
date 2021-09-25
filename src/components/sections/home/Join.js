@@ -133,6 +133,7 @@ const Join = () => {
                 <a
                   href="https://linktr.ee/winc_ucr"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none", cursor: "not-allowed" }}
                 >
                   <div
@@ -174,6 +175,7 @@ const Join = () => {
                 <a
                   href="https://www.youtube.com/channel/UCpg9Xu-WaFM3KRN35f6hPNA"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <div
@@ -216,6 +218,7 @@ const Join = () => {
                 <a
                   href="https://wincucr.slack.com/ssb/redirect"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <div
@@ -258,6 +261,7 @@ const Join = () => {
                 <a
                   href="https://podcasts.apple.com/us/podcast/women-in-conversations/id1510124573"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <div

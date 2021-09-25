@@ -38,7 +38,11 @@ const Footer = () => {
           <h3>Stay in Touch</h3>
           <ul>
             <li>
-              <a href="https://wincucr.slack.com/ssb/redirect" target="_blank">
+              <a
+                href="https://wincucr.slack.com/ssb/redirect"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Slack
               </a>
             </li>
@@ -59,27 +63,41 @@ const Footer = () => {
           alignContent: "center",
         }}
       >
-        <a href="https://discord.gg/RH53n2dCFn" target="_blank">
+        <a
+          href="https://discord.gg/RH53n2dCFn"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaDiscord size="2em" />
         </a>
         <a
           href="https://www.linkedin.com/company/ucr-women-in-computing/"
           target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin size="2em" />
         </a>
-        <a href="https://github.com/winc-ucr" target="_blank">
+        <a href="https://github.com/winc-ucr" target="_blank" rel="noreferrer">
           <VscGithubInverted size="2em" />
         </a>
-        <a href="https://wincucr.slack.com/ssb/redirect" target="_blank">
+        <a
+          href="https://wincucr.slack.com/ssb/redirect"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaSlack size="2em" />
         </a>
-        <a href="https://www.instagram.com/wincucr/" target="_blank">
+        <a
+          href="https://www.instagram.com/wincucr/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiFillInstagram size="2em" />
         </a>
         <a
           href="https://www.youtube.com/channel/UCpg9Xu-WaFM3KRN35f6hPNA"
           target="_blank"
+          rel="noreferrer"
         >
           <FaYoutube size="2em" />
         </a>
