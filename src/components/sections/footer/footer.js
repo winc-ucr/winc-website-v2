@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaDiscord, FaLinkedin, FaYoutube, FaSlack } from "react-icons/fa";
+import { FaLinkedin, FaYoutube, FaSlack } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
 import "./footer.css";
 
@@ -63,13 +63,13 @@ const Footer = () => {
           alignContent: "center",
         }}
       >
-        <a
+        {/* <a
           href="https://discord.gg/RH53n2dCFn"
           target="_blank"
           rel="noreferrer"
         >
           <FaDiscord size="2em" />
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/company/ucr-women-in-computing/"
           target="_blank"

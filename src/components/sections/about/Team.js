@@ -73,7 +73,7 @@ const membersProfiles = {
     major: "Comp Sci",
     sign: "Virgo",
     emoji: "🤠",
-    fun: "I can do that flower thing with my tongue!",
+    fun: "I rescued a 1-week-old kitten in June and he is now 3-months-old (his name is Shadow)!",
     linkedin: "https://www.linkedin.com/in/cristinalawson/",
     github: "https://github.com/cristina95138",
     portfolio: "https://www.cristinalawson.com/",
