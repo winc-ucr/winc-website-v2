@@ -28,12 +28,12 @@ export const eventExpand = {
   },
   "How to Make the Best of your Summer": {
     type: "Technical Workshop",
-    time: "TBD",
+    time: "5:30PM",
     link: "https://us02web.zoom.us/j/7181383962",
     desc: "What will you be doing next summer? An internship, research, classes? Advice on how to set yourself up early so that you make the best of your summer.",
     day: "12",
     month: "OCT",
-    endDate: new Date("2021-10-13T00:00:00-0700"),
+    endDate: new Date("2021-10-12T19:00:00-0700"),
   },
   "Virtual Social/GameNight": {
     type: "Social",
@@ -46,12 +46,21 @@ export const eventExpand = {
   },
   "Industry Professional Panel": {
     type: "Panel",
-    time: "TBD",
+    time: "7:00PM",
     link: "",
     desc: "details coming soon",
     day: "19",
     month: "OCT",
-    endDate: new Date("2021-10-12T19:00:00-0700"),
+    endDate: new Date("2021-10-19T20:00:00-0700"),
+  },
+  "Taking Classes and Managing Life": {
+    type: "Fireside Chats",
+    time: "7:00PM",
+    link: "https://us02web.zoom.us/j/7181383962",
+    desc: "details coming soon",
+    day: "2",
+    month: "NOV",
+    endDate: new Date("2021-11-02T20:00:00-0700"),
   },
   "Cutie Hack": {
     type: "Technical Workshop",
@@ -79,14 +88,5 @@ export const eventExpand = {
     day: "16",
     month: "NOV",
     endDate: new Date("2021-11-16T19:51:00-0700"),
-  },
-  "Intro to Git/Github": {
-    type: "General Meeting",
-    time: "TBD",
-    link: "https://us02web.zoom.us/j/7181383962",
-    desc: "Want to know how to use GitHub and Git efficiently and effectively? Stop by this workshop to learn some Github and Git tips and tricks.",
-    day: "23",
-    month: "NOV",
-    endDate: new Date("2021-11-24T00:00:00-0700"),
   },
 };

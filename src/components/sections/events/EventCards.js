@@ -18,7 +18,7 @@ const EventCards = () => {
       }
     });
 
-    setPast(currPast);
+    setPast(currPast.reverse());
     setUpcoming(currUpcoming);
   }, []);
 
