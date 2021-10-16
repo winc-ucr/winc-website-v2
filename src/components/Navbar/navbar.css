@@ -15,7 +15,7 @@
 }
 
 .navbarLink > *, .mobileNavLink > * {
-  color: white;
+  color: #808589;
   text-decoration: none;
 }
 
@@ -24,11 +24,12 @@
   position: fixed;
   z-index: 2;
   top: 5.25rem;
+  margin-top: 2.25rem;
   padding: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #FA6C5E;
+  background-color: white;
 }
 
 .actionButton {

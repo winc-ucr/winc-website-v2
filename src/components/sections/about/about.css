@@ -1,5 +1,5 @@
 .hero {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 15.25rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +88,7 @@
   color: #FA6C5E;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 971px) {
   .heroMobile {
     display: none;
   }
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
   .heroDesktop {
     display: none;
   }

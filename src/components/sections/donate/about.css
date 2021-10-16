@@ -1,0 +1,58 @@
+.hero {
+    min-height: calc(100vh - 15.25rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 1.0875rem 1.45rem;
+  }
+  
+  .aboutDesc > * {
+    margin-bottom: 0.75rem;
+  }
+  .heroDesktop, .heroMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  
+  @media (min-width: 971px) {
+    .heroMobile {
+      display: none;
+    }
+  
+    .heroDesktop {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 970px) {
+    .heroDesktop {
+      display: none;
+    }
+  
+    .heroMobile {
+      display: flex;
+    }
+  
+    .hero {
+      display: flex;
+      min-height: calc(100vh - 10rem);
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .heroDesc {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+  }

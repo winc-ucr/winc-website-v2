@@ -4,6 +4,7 @@ import { VscChromeClose, VscMenu } from "react-icons/vsc";
 import "./navbar.css";
 
 const navLinks = [
+  { to: "/donate", text: "Donate" },
   { to: "/about", text: "About" },
   { to: "/#programs", text: "Programs" },
   { to: "/events", text: "Events" },
@@ -15,11 +16,43 @@ const NavigationBar = () => {
   return (
     <>
       <div
+        style={{
+          width: "100vw",
+          backgroundColor: "black",
+          position: "fixed",
+          zIndex: 2,
+          height: "2.25rem",
+          top: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+          fontSize: "0.75rem",
+        }}
+      >
+        <p style={{ padding: 0, margin: 0 }}>
+          UCR engineering is matching{" "}
+          <span style={{ color: "#FA6C5E", fontWeight: "bold" }}>ALL</span>{" "}
+          donations!{" "}
+          <Link
+            to={"/donate"}
+            style={{
+              color: "#FA6C5E",
+              fontWeight: "bold",
+              textDecoration: "underline",
+            }}
+          >
+            Become a donor →
+          </Link>
+        </p>
+      </div>
+      <div
         className="navbar"
         style={{
           position: "fixed",
           zIndex: 2,
           top: 0,
+          marginTop: "2.25rem",
           padding: "0 2rem",
           width: "100%",
           maxWidth: "100vw",
@@ -28,8 +61,9 @@ const NavigationBar = () => {
           alignContent: "center",
           justifyContent: "center",
           flexDirection: "column",
-          backgroundColor: "#FA6C5E",
-          color: "white",
+          backgroundColor: "white",
+          // backgroundColor: "#FA6C5E",
+          color: "black",
         }}
       >
         <div
@@ -52,7 +86,7 @@ const NavigationBar = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  color: "white",
+                  color: "#FA6C5E",
                   textDecoration: "none",
                   fontFamily: "Manrope, sans-serif",
                   fontSize: "2rem",
@@ -86,8 +120,8 @@ const NavigationBar = () => {
             <div
               className="actionButton"
               style={{
-                backgroundColor: "white",
-                color: "black",
+                backgroundColor: "black",
+                color: "white",
                 border: "0.125rem solid black",
               }}
             >

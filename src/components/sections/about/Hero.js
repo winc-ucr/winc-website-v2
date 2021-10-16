@@ -17,6 +17,7 @@ const Hero = () => {
             className="aboutDesc"
             style={{
               marginBottom: "2.5rem",
+              marginRight: "0px",
               maxWidth: "25rem",
               fontSize: "clamp(0.85rem, 1.5vw, 1rem)",
             }}
