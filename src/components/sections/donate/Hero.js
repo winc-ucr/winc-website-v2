@@ -3,7 +3,7 @@ import "./about.css";
 import HeroImage from "../../../images/winczoom.png";
 const Hero = () => {
   return (
-    <section style={{ marginTop: "5.25rem", backgroundColor: "#F6EEE3" }}>
+    <section style={{ marginTop: "7.5rem", backgroundColor: "#F6EEE3", paddingTop: '2rem' }}>
       <div className="hero">
         <div
           className="heroMobile"
@@ -35,39 +35,6 @@ const Hero = () => {
               color: "#203E4D",
             }}
           >
-            {" "}
-            <h3>How do i donate?</h3>
-            <div style={{ textAlign: "left" }}>
-              <ol>
-                <li>
-                  Use this link:{" "}
-                  <a
-                    style={{
-                      color: "#203E4D",
-                      fontWeight: "bold",
-                      textDecoration: "underline",
-                    }}
-                    href="https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/deans-match-challenge"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    www.engr.ucr.edu/match
-                  </a>
-                </li>
-                <li>
-                  Select our club,{" "}
-                  <span style={{ fontWeight: "bold" }}>
-                    Women in Computing(WinC)
-                  </span>
-                  , when choosing an organization
-                </li>
-                <li>
-                  Select the amount you would like to donate, and click{" "}
-                  <span style={{ fontWeight: "bold" }}>'Donate Now'</span>
-                </li>
-                <li>Fill out your information and proceed to payment</li>
-              </ol>
-            </div>
             <h3 style={{ color: "#203E4D" }}>
               What is the Dean's Match Challenge?
             </h3>
