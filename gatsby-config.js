@@ -1,3 +1,4 @@
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `UCR WINC`,
@@ -31,7 +32,7 @@ module.exports = {
     {
       resolve: "@highlight-run/gatsby-plugin-highlight",
       options: {
-        orgID: '1xdnjlg0',
+        orgID: process.env.ORGID,
         disableNetworkRecording: false,
         disableConsoleRecording: false,
           enableStrictPrivacy: false,

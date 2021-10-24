@@ -9,6 +9,7 @@
     "@fullcalendar/interaction": "^5.9.0",
     "@fullcalendar/react": "^5.9.0",
     "@highlight-run/gatsby-plugin-highlight": "^0.0.6",
+    "dotenv": "^10.0.0",
     "gatsby": "^3.13.0",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-image": "^1.13.0",
