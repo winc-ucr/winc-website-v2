@@ -28,6 +28,18 @@ module.exports = {
         icon: `src/images/winclogo.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "@highlight-run/gatsby-plugin-highlight",
+      options: {
+        orgID: '1xdnjlg0',
+        disableNetworkRecording: false,
+        disableConsoleRecording: false,
+          enableStrictPrivacy: false,
+          environment: 'production',
+        version: '5.2.3',
+        networkRecording: true,
+      }
+    },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
