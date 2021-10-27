@@ -44,25 +44,16 @@ export const eventExpand = {
     month: "OCT",
     endDate: new Date("2021-10-12T19:51:00-0700"),
   },
-  "Industry Professional Panel": {
-    type: "Panel",
-    time: "7:00PM",
-    link: "",
-    desc: "details coming soon",
-    day: "19",
-    month: "OCT",
-    endDate: new Date("2021-10-19T20:00:00-0700"),
-  },
   "Taking Classes and Managing Life": {
     type: "Fireside Chats",
     time: "7:00PM",
     link: "https://us02web.zoom.us/j/7181383962",
     desc: "details coming soon",
-    day: "2",
+    day: "02",
     month: "NOV",
     endDate: new Date("2021-11-02T20:00:00-0700"),
   },
-  "Cutie Hack": {
+  "Intro to LinkedIn @ Cutie Hack": {
     type: "Technical Workshop",
     time: "TBD",
     link: "",
@@ -70,6 +61,15 @@ export const eventExpand = {
     day: "06",
     month: "NOV",
     endDate: new Date("2021-11-06T19:51:00-0700"),
+  },
+  "Industry Professional Panel": {
+    type: "Panel",
+    time: "7:00PM",
+    link: "",
+    desc: "Interested in learning more about work in the tech industry? Come out to our Industry Professional Panel to meet industry professionals, hear about their experiences and ask any questions you have!",
+    day: "09",
+    month: "NOV",
+    endDate: new Date("2021-11-09T20:00:00-0700"),
   },
   "Scientific Communication in Computing": {
     type: "Graduate Session",

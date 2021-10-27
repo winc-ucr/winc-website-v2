@@ -61,7 +61,7 @@ const EventCards = () => {
             <h1>Upcoming Events</h1>
             {upcoming.length === 0 ? <p>No upcoming events</p> : null}
             {upcoming.map((event, i) => {
-              if (i > 2) {
+              if (i > 5) {
                 return null;
               }
               return (
