@@ -11,7 +11,7 @@ const Hero = () => {
       <div
         style={{
           backgroundColor: "#FA6C5E",
-          marginTop: "7.5rem",
+          marginTop: "5rem",
         }}
       >
         <div className="hero">

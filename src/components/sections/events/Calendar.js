@@ -69,7 +69,7 @@ const Calendar = () => {
     <section
       style={{
         padding: "4rem",
-        marginTop: "7.5rem",
+        marginTop: "5rem",
         backgroundColor: "#FA6C5E",
         display: "flex",
         flexDirection: "column",

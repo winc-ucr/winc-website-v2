@@ -3,7 +3,7 @@ import "./about.css";
 import HeroImage from "../../../images/gymPhoto.jpeg";
 const Hero = () => {
   return (
-    <section style={{ marginTop: "7.5rem" }}>
+    <section style={{ marginTop: "5rem" }}>
       <div className="hero">
         <div
           className="heroMobile"
