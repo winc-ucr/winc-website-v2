@@ -20,11 +20,10 @@
 }
 
 .mobileLinks {
-  border-bottom: 2px solid #A0A0A0;
+  box-shadow: 0 8px 8px -8px rgba(250, 108, 94, 0.4);
   position: fixed;
   z-index: 2;
   top: 5.25rem;
-  margin-top: 2.25rem;
   padding: 2rem;
   width: 100%;
   display: flex;

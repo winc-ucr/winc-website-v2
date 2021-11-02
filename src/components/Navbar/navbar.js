@@ -31,7 +31,7 @@ const NavigationBar = () => {
           justifyContent: "center",
           flexDirection: "column",
           backgroundColor: "white",
-          boxShadow: "0 0 8px rgba(250, 108, 94, 0.4)",
+          boxShadow: "0 8px 8px -8px rgba(250, 108, 94, 0.4)",
           // backgroundColor: "#FA6C5E",
           color: "black",
         }}
