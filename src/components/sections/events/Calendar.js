@@ -10,7 +10,7 @@ const events = [
   { title: "Land That SWE Internship & Intern AMA", date: "2021-10-05" },
   { title: "How to Make the Best of your Summer", date: "2021-10-12" },
   { title: "Virtual Social/GameNight", date: "2021-10-12" },
-  { title: "Taking Classes and Managing Life", date: "2021-11-02" },
+  { title: "Fireside Chat with Professor LePendu", date: "2021-11-02" },
   { title: "Intro to LinkedIn @ Cutie Hack", date: "2021-11-06" },
   { title: "Industry Professional Panel", date: "2021-11-09" },
   { title: "Scientific Communication in Computing", date: "2021-11-09" },

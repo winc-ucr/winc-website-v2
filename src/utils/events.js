@@ -44,11 +44,11 @@ export const eventExpand = {
     month: "OCT",
     endDate: new Date("2021-10-12T19:51:00-0700"),
   },
-  "Taking Classes and Managing Life": {
+  "Fireside Chat with Professor LePendu": {
     type: "Fireside Chats",
     time: "7:00PM",
     link: "https://us02web.zoom.us/j/7181383962",
-    desc: "details coming soon",
+    desc: "Ever wanted to have the opportunity to have a more informal conversation with a UCR Computer Science professor? Well now you have the opportunity to do so. Come join us in or Fireside Chat with our special guest Professor LePendu! We can't wait to see you there and hear your questions!",
     day: "02",
     month: "NOV",
     endDate: new Date("2021-11-02T20:00:00-0700"),
