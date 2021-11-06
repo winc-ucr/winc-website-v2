@@ -12,8 +12,8 @@ const events = [
   { title: "Virtual Social/GameNight", date: "2021-10-12" },
   { title: "Fireside Chat with Professor LePendu", date: "2021-11-02" },
   { title: "Intro to LinkedIn @ Cutie Hack", date: "2021-11-06" },
-  { title: "Industry Professional Panel", date: "2021-11-09" },
   { title: "Scientific Communication in Computing", date: "2021-11-09" },
+  { title: "Industry Professional Panel", date: "2021-11-11" },
   { title: "World of Computing", date: "2021-11-16" },
 ];
 const renderEventContent = (eventInfo) => {
