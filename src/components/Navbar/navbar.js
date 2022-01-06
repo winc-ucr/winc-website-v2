@@ -60,11 +60,15 @@ const NavigationBar = () => {
                   textDecoration: "none",
                   fontFamily: "Manrope, sans-serif",
                   fontWeight: "bold",
-                  maxWidth: '7rem'
+                  maxWidth: "7rem",
                 }}
                 to={"/"}
               >
-                <img src={Logo} alt="winc logo" style={{width: "inherit", margin: 0, padding: 0}}/>
+                <img
+                  src={Logo}
+                  alt="winc logo"
+                  style={{ width: "inherit", margin: 0, padding: 0 }}
+                />
               </Link>
             </div>
           </div>

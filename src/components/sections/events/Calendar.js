@@ -1,8 +1,8 @@
-import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
+import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { eventExpand } from "../../../utils/events";
+import EventModal from "./EventModal";
 
 const events = [
   { title: "Welcome to WINC [WINC panel]", date: "2021-09-21" },
@@ -15,11 +15,22 @@ const events = [
   { title: "Sharpen Soft Skills at a Graduate Level", date: "2021-11-09" },
   { title: "Industry Professional Panel", date: "2021-11-11" },
   { title: "World of Computing", date: "2021-11-16" },
+  { title: "Officer Infosession", date: "2022-01-05" },
+  { title: "Rose Hack: Resume Workshop", date: "2022-01-12" },
+  { title: "Life in the Industry: SWE", date: "2022-01-12" },
+  { title: "What is the Internet of Things (IoT)?", date: "2022-01-19" },
+  { title: "Speed Friending Social", date: "2022-01-26" },
+  { title: "How to Apply to Graduate School", date: "2022-02-02" },
+  { title: "Virtual Reality and the Metaverse", date: "2022-02-09" },
+  { title: "Fireside Chat with Dr. Salloum", date: "2022-02-16" },
+  { title: "Life in the Industry: PM", date: "2022-02-23" },
+  { title: "From  College Students to Software Engineers", date: "2022-03-02" },
 ];
 const renderEventContent = (eventInfo) => {
   console.log(eventInfo);
+
   return (
-    <a
+    <div
       target="_blank"
       rel="noreferrer"
       style={{
@@ -60,60 +71,39 @@ const renderEventContent = (eventInfo) => {
       >
         {eventExpand[eventInfo.event.title].type}
       </p>
-    </a>
+    </div>
   );
 };
 
 const Calendar = () => {
   return (
-    <section
-      style={{
-        padding: "4rem",
-        marginTop: "5rem",
-        backgroundColor: "#FA6C5E",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <h1 style={{ color: "white", marginBottom: "0.5rem" }}>Events</h1>
-      <p style={{ color: "#ececec" }}>
-        See our calendar for all our events. Clicking each event will take you
-        to the zoom call. The calendar is best when viewed on desktop.
-      </p>
-      <a
-        href="#eventcards"
+    <>
+      <section
         style={{
-          textDecoration: "none",
-          backgroundColor: "#F7D1B8",
-          padding: "0.5rem",
-          width: "10rem",
-          marginBottom: "1rem",
-          textAlign: "center",
-          borderRadius: "1rem",
-          color: "black",
+          padding: "4rem",
+          marginTop: "5rem",
+          backgroundColor: "#FA6C5E",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          flexDirection: "column",
         }}
       >
-        See Table View
-        <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-      </a>
-      <div
-        style={{
-          backgroundColor: "white",
-          padding: "1rem",
-          border: "0.15rem solid #F4C2A1",
-        }}
-      >
+        <h1 style={{ color: "white", marginBottom: "0.5rem" }}>Events</h1>
+        <p style={{ color: "#ececec" }}>
+          See our calendar for all our events. Clicking each event will take you
+          to the zoom call. The calendar is best when viewed on desktop.
+        </p>
+      </section>
+      <div style={{ padding: "1rem" }}>
         <FullCalendar
           plugins={[dayGridPlugin]}
           initialView="dayGridMonth"
-          eventContent={renderEventContent}
+          eventContent={(eventInfo) => {
+            return <EventModal eventInfo={eventInfo} />;
+          }}
           events={events}
         />
       </div>
-    </section>
+    </>
   );
 };
 

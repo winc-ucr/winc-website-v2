@@ -3,6 +3,9 @@
   max-width: 60rem;
 }
 
+table {
+  margin-bottom: 0px;
+}
 
 @media (max-width: 900px) {
   .eventcard {

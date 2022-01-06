@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: `UCR WINC`,
@@ -6,6 +6,7 @@ module.exports = {
     author: `@winc`,
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -35,11 +36,11 @@ module.exports = {
         orgID: process.env.ORGID,
         disableNetworkRecording: false,
         disableConsoleRecording: false,
-          enableStrictPrivacy: false,
-          environment: 'production',
-        version: '5.2.3',
+        enableStrictPrivacy: false,
+        environment: "production",
+        version: "5.2.3",
         networkRecording: true,
-      }
+      },
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

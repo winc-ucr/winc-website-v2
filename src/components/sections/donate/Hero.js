@@ -3,7 +3,13 @@ import "./about.css";
 import HeroImage from "../../../images/winczoom.png";
 const Hero = () => {
   return (
-    <section style={{ marginTop: "5rem", backgroundColor: "#F6EEE3", paddingTop: '2rem' }}>
+    <section
+      style={{
+        marginTop: "5rem",
+        backgroundColor: "#F6EEE3",
+        paddingTop: "2rem",
+      }}
+    >
       <div className="hero">
         <div
           className="heroMobile"
