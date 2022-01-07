@@ -29,6 +29,7 @@ const EventModal = ({ eventInfo }) => {
     gridTemplateColumns: "32px 1fr",
     overflow: "scroll",
     maxHeight: "80vh",
+    maxWidth: "80vw"
   };
 
   return (
