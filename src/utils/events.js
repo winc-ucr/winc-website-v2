@@ -1,5 +1,6 @@
 import lifeinswe from "../images/eventGraphics/lifeinswe.png";
 import infosession from "../images/eventGraphics/infosession.png";
+import studyabroadinfosession from "../images/eventGraphics/studyabroadinfosession.png";
 
 export const eventExpand = {
   "Welcome to WINC [WINC panel]": {
@@ -133,6 +134,17 @@ export const eventExpand = {
     month: "JAN",
     src: lifeinswe,
     endDate: new Date("2022-01-12T19:51:00-0700"),
+  },
+  "WINC: Study Abroad Infosession": {
+    type: "Infosession",
+    time: "7:00PM",
+    link: "https://ucr.zoom.us/j/95839206307",
+    date: "January 13, 2022 7:00PM",
+    desc: "Love software engineering? Love Paris? Check out UCR's new Startup Bootcamp program hosted by Prof. Jeff McDaniel and Prof. Brian Crites this summer! Take CS110 and CS175 in Paris, France this July during Summer Sessions and learn about how pitch a tech business idea with an international perspective. Have questions? Please stop by our infosession to meet the instructors and more info! Link to Startup Bootcamp Information: https://bit.ly/3IJcN4A",
+    day: "13",
+    month: "JAN",
+    src: studyabroadinfosession,
+    endDate: new Date("2022-01-13T19:51:00-0700"),
   },
   "What is the Internet of Things (IoT)?": {
     type: "Technical Workshop",

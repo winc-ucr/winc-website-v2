@@ -18,6 +18,7 @@ const events = [
   { title: "Officer Infosession", date: "2022-01-05" },
   { title: "Rose Hack: Resume Workshop", date: "2022-01-12" },
   { title: "Life in the Industry: SWE", date: "2022-01-12" },
+  { title: "WINC: Study Abroad Infosession", date: "2022-01-13" },
   { title: "What is the Internet of Things (IoT)?", date: "2022-01-19" },
   { title: "Speed Friending Social", date: "2022-01-26" },
   { title: "How to Apply to Graduate School", date: "2022-02-02" },
@@ -26,54 +27,6 @@ const events = [
   { title: "Life in the Industry: PM", date: "2022-02-23" },
   { title: "From  College Students to Software Engineers", date: "2022-03-02" },
 ];
-const renderEventContent = (eventInfo) => {
-  console.log(eventInfo);
-
-  return (
-    <div
-      target="_blank"
-      rel="noreferrer"
-      style={{
-        width: "100%",
-        maxWidth: "100vw",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#FA6C5E",
-        border: "0px",
-        textDecoration: "none",
-        padding: "0.5rem",
-        color: "#F6EEE3",
-        cursor: eventExpand[eventInfo.event.title].link
-          ? "pointer"
-          : "not-allowed",
-      }}
-      href={eventExpand[eventInfo.event.title].link}
-    >
-      <b style={{ whiteSpace: "initial" }}>
-        {eventExpand[eventInfo.event.title].time}
-      </b>
-      <p style={{ width: "100%", whiteSpace: "initial", marginBottom: 0 }}>
-        {eventInfo.event.title}
-      </p>
-      <p
-        style={{
-          backgroundColor: "#FCDCA8",
-          color: "#6c757d",
-          maxWidth: "fit-content",
-          borderRadius: "2em",
-          padding: "0px 0.75rem",
-          whiteSpace: "initial",
-          marginTop: "0.5rem",
-          marginBottom: 0,
-          textAlign: "center",
-          lineHeight: 1.2,
-        }}
-      >
-        {eventExpand[eventInfo.event.title].type}
-      </p>
-    </div>
-  );
-};
 
 const Calendar = () => {
   return (
