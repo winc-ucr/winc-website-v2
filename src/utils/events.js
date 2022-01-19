@@ -1,6 +1,7 @@
 import lifeinswe from "../images/eventGraphics/lifeinswe.png";
 import infosession from "../images/eventGraphics/infosession.png";
 import studyabroadinfosession from "../images/eventGraphics/studyabroadinfosession.png";
+import iotmeeting from "../images/eventGraphics/iotmeeting.png";
 
 export const eventExpand = {
   "Welcome to WINC [WINC panel]": {
@@ -154,6 +155,7 @@ export const eventExpand = {
     desc: "Have you ever heard the term Internet of Things or IoT and were curious about what it is? Join us in this workshop to learn about IoT and why it is the next big revolution in computing.",
     day: "19",
     month: "JAN",
+    src: iotmeeting,
     endDate: new Date("2022-01-19T19:51:00-0700"),
   },
   "Speed Friending Social": {
