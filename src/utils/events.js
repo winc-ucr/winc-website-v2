@@ -188,7 +188,7 @@ export const eventExpand = {
     month: "FEB",
     endDate: new Date("2022-02-09T19:51:00-0700"),
   },
-  "Fireside Chat with Dr. Salloum": {
+  "Fireside Chat with Dr. Chen": {
     type: "Fireside Chats",
     time: "7:00PM",
     link: "https://ucr.zoom.us/j/94596661949",
@@ -207,15 +207,5 @@ export const eventExpand = {
     day: "23",
     month: "FEB",
     endDate: new Date("2022-02-23T19:51:00-0700"),
-  },
-  "From  College Students to Software Engineers": {
-    type: "Industry Professional Panel",
-    time: "7:00PM",
-    link: "https://ucr.zoom.us/j/96068293977",
-    date: "March 2, 2022 7:00PM",
-    desc: "Moving on from college and into the real world can be scary. Luckily, recent college graduates and current software engineers Katie Fukuda, Paris Hom, and Wendy Li are here to answer all your questions about transitioning to post-grad life! Come out to our Industry Professional Panel to hear about our speakers’ experiences and ask any questions you have!",
-    day: "2",
-    month: "MAR",
-    endDate: new Date("2022-03-02T19:51:00-0700"),
   },
 };

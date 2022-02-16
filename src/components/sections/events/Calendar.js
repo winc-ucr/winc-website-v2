@@ -25,7 +25,6 @@ const events = [
   { title: "Virtual Reality and the Metaverse", date: "2022-02-09" },
   { title: "Fireside Chat with Dr. Salloum", date: "2022-02-16" },
   { title: "Life in the Industry: PM", date: "2022-02-23" },
-  { title: "From  College Students to Software Engineers", date: "2022-03-02" },
 ];
 
 const Calendar = () => {
