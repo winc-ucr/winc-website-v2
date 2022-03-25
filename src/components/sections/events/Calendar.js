@@ -23,7 +23,7 @@ const events = [
   { title: "Speed Friending Social", date: "2022-01-26" },
   { title: "How to Apply to Graduate School", date: "2022-02-02" },
   { title: "Virtual Reality and the Metaverse", date: "2022-02-09" },
-  { title: "Fireside Chat with Dr. Salloum", date: "2022-02-16" },
+  { title: "Fireside Chat with Dr. Chen", date: "2022-02-16" },
   { title: "Life in the Industry: PM", date: "2022-02-23" },
 ];
 
