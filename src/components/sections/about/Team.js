@@ -12,13 +12,113 @@ import ArleneImg from "../../../images/board/arlene.png";
 import CristinaImg from "../../../images/board/cristina.png";
 import EllieImg from "../../../images/board/ellie.png";
 import HariniImg from "../../../images/board/harini.png";
-import KrystalImg from "../../../images/board/krystal.png";
+// import KrystalImg from "../../../images/board/krystal.png";
 import MeganImg from "../../../images/board/megan.png";
 import NishithaImg from "../../../images/board/nishitha.png";
 import ValerieImg from "../../../images/board/valerie.png";
+import KrystalImg from "../../../images/board/krystal.jpg";
+import ChloeImg from "../../../images/board/chloe.jpg";
+import NehaImg from "../../../images/board/neha.jpg";
+import ReannaImg from "../../../images/board/reanna.jpg";
+import MelaneyImg from "../../../images/board/melaney.jpg";
+import AnushkaImg from "../../../images/board/anushka.jpg";
+
 import "./about.css";
 
 const membersProfiles = {
+  Krystal: {
+    name: "Krystal Pothilat",
+    role: "President",
+    src: KrystalImg,
+    year: "3rd year",
+    pronouns: "She/Her/Hers",
+    major: "Comp Sci",
+    sign: "Capricorn",
+    emoji: "🍪",
+    fun: null,
+    linkedin: "linkedin.com/in/krystalpothilat",
+    github: null,
+    portfolio: null,
+    email: "kpoth001@ucr.edu",
+  },
+  Chloe: {
+    name: "Chloe Au",
+    role: "Vice President",
+    src: ChloeImg,
+    year: "2nd year",
+    pronouns: "She/Her/Hers",
+    major: "Data Science",
+    sign: "Virgo",
+    emoji: "😚",
+    fun: null,
+    linkedin: null,
+    github: null,
+    portfolio: null,
+    email: "cau009@ucr.edu",
+  },
+  Neha: {
+    name: "Neha Mathews",
+    role: "Secretary",
+    src: NehaImg,
+    year: "4th year",
+    pronouns: "She/Her/Hers",
+    major: "Data Science",
+    sign: "Libra",
+    emoji: "🧸",
+    fun: null,
+    linkedin: null,
+    github: null,
+    portfolio: null,
+    email: "nmath018@ucr.edu",
+  },
+  Reanna: {
+    name: "Reanna Alam ",
+    role: "Social Media Manager",
+    src: ReannaImg,
+    year: "2nd year",
+    pronouns: "She/Her/Hers",
+    major: "Cell, molecular and developmental biology ",
+    sign: "Sagittarius",
+    emoji: "🥺",
+    fun: null,
+    linkedin: null,
+    github: null,
+    portfolio: null,
+    email: "ralam014@ucr.edu@ucr.edu",
+  },
+  Melaney: {
+    name: "Melany Rangel",
+    role: "Operations",
+    src: MelaneyImg,
+    year: "3rd year",
+    pronouns: "She/Her/Hers",
+    major: "Data Science",
+    sign: "Statistics",
+    emoji: "🌙",
+    fun: null,
+    linkedin: null,
+    github: "",
+    portfolio: "",
+    email: "mrang025@ucr.edu",
+  },
+  anushka: {
+    name: "Anushka Pandya",
+    role: "Treasurer",
+    src: AnushkaImg,
+    year: "4th year",
+    pronouns: "She/Her/Hers",
+    major: "Data Science",
+    sign: "Virgo",
+    emoji: "🦋",
+    fun: null,
+    linkedin: null,
+    github: null,
+    portfolio: null,
+    email: "apand023@ucr.edu",
+  },
+};
+
+const members2021Profiles = {
   anchita: {
     name: "Anchita Bora",
     role: "President",
@@ -250,7 +350,9 @@ const Team = () => {
                 <img
                   src={membersProfiles[member].src}
                   style={{
-                    objectFit: "fit",
+                    objectFit: "cover",
+                    height: 200,
+                    width: 500,
                     margin: 0,
                   }}
                 />
@@ -318,16 +420,18 @@ const Team = () => {
                   </a>
                 ) : null}
               </div>
-              <div
-                style={{
-                  borderLeft: "0.125rem solid #F4D8C2",
-                  padding: "0.25rem",
-                  backgroundColor: "#F6EEE3",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                <p>"{membersProfiles[member].fun}"</p>
-              </div>
+              {membersProfiles[member].fun && (
+                <div
+                  style={{
+                    borderLeft: "0.125rem solid #F4D8C2",
+                    padding: "0.25rem",
+                    backgroundColor: "#F6EEE3",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  <p>"{membersProfiles[member].fun}"</p>
+                </div>
+              )}
               <p>
                 {membersProfiles[member].year} · {membersProfiles[member].major}
               </p>
