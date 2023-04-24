@@ -99,7 +99,7 @@ const NavigationBar = () => {
                 border: "0.125rem solid black",
               }}
             >
-              JOIN NOW
+              JOIN
             </div>
           </a>
           {!isOpen ? (

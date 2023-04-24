@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     {
-      resolve: "@highlight-run/gatsby-plugin-highlight",
+      //resolve: "@highlight-run/gatsby-plugin-highlight",
       options: {
         orgID: process.env.ORGID,
         disableNetworkRecording: false,
